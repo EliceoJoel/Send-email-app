@@ -2,7 +2,7 @@
 app to send email
 
 ## Web page
-[https://sendemail.netlify.app/](https://sendemail.netlify.app/)
+[https://sendemailpage.netlify.app/](https://sendemailpage.netlify.app/)
 
 ## Installation
 
