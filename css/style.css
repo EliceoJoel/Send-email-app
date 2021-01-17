@@ -180,7 +180,7 @@ button{
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container{
     --border-width: 10px;
     width: 97%;
@@ -206,5 +206,5 @@ button{
     border-radius: 0;
   }
 
-}
+} */
 
