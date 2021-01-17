@@ -180,31 +180,15 @@ button{
 
 
 
-/* @media (max-width: 768px) {
-  .container{
-    --border-width: 10px;
-    width: 97%;
-    height: 98%;
-    border-radius: 0;
-  }
-
-  .container::after{
-    border-radius: 0;
-  }
+@media (max-width: 768px) {
+ 
 
 }
 
 @media (max-height: 768px) {
-  .container{
-    --border-width: 10px;
-    width: 98%;
-    height: 97%;
-    border-radius: 0;
-  }
+    .container{
+      width: 90%;
+    }
 
-  .container::after{
-    border-radius: 0;
-  }
-
-} */
+}
 
