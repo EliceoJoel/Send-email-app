@@ -178,13 +178,6 @@ button{
 }
 
 
-
-
-@media (max-width: 768px) {
- 
-
-}
-
 @media (max-height: 768px) {
     .container{
       width: 90%;
