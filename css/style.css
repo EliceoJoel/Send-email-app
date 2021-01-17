@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+
+.container {
+  --border-width: 5px;
+  position: relative;
+  width: 40vh;
+  height: auto;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  border-radius: var(--border-width);
+}
+.container::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: 
+  linear-gradient(60deg, 
+  #5f86f2, 
+  #a65ff2,
+  #f25fd0, 
+  #f25f61, 
+  #f2cb5f, 
+  #abf25f, 
+  #5ff281, 
+  #5ff2f0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 3s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.card{
+  padding: 25px;
+}
+
+.card-header{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  font-family: Lato, sans-serif; 
+}
+
+.card-header p{
+  font-weight: bold;
+}
+
+.s:hover{
+  color: #5f86f2;
+}
+
+.e:hover{
+  color: #a65ff2;
+}
+
+.n:hover{
+  color: #f25fd0;
+}
+
+.d:hover{
+  color: #f25f61;
+}
+
+.e2:hover{
+  color: #abf25f;
+}
+
+.m:hover{
+  color: #5ff281;
+}
+
+.a:hover{
+  color: #5ff2f0;
+}
+
+.i:hover{
+  color: #98acf8;
+}
+
+.l:hover{
+  color: #f2cb5f;
+}
+
+.card-body{
+  font-size: 1.2rem;
+}
+
+.input{
+  padding: 10px 0;
+}
+
+input, textarea{
+  width: 100%;
+  word-wrap: break-word;
+  background: black;
+  font-size: 1rem;
+  color: white;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  resize: none;
+  transition: height 1s;
+}
+
+textarea{
+  height: 24px;
+  transition:  height 1s;
+}
+
+input:focus{
+  border-bottom:1px solid #f25fd0;
+}
+
+textarea:focus{
+  height: 100px;
+  border-bottom:1px solid #f25fd0;
+}
+
+
+/*BUTTONS*/
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.send{
+  background:rgb(6, 128, 6);
+}
+
+.send:hover,focus{
+  background: rgb(8, 192, 8)
+}
+
+.reset{
+  background: rgb(6, 87, 238);
+}
+
+.reset:hover,focus{
+  background:  rgb(10, 114, 250);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container{
+    --border-width: 10px;
+    width: 97%;
+    height: 98%;
+    border-radius: 0;
+  }
+
+  .container::after{
+    border-radius: 0;
+  }
+
+}
+
+@media (max-height: 768px) {
+  .container{
+    --border-width: 10px;
+    width: 98%;
+    height: 97%;
+    border-radius: 0;
+  }
+
+  .container::after{
+    border-radius: 0;
+  }
+
+}
+
