@@ -1,5 +1,5 @@
 # Send-email-app
-app to send email
+web page that simulates the sending of an email with rgb light animations
 
 ## Web page
 [https://sendemailpage.netlify.app/](https://sendemailpage.netlify.app/)
