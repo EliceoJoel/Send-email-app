@@ -5,8 +5,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="fav.png" type="image/png">
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">1
-   <title>Document</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   <title>Send email</title>
 </head>
 <body>
    <div class="container animated">
@@ -24,7 +24,7 @@
             <p class="l">L</p>
          </div>
          <div class="card-body">
-            <form>
+            <form id="send-email">
                <div class="input">
                   <label for="to">To:</label><br>
                   <input type="email" id="to">
@@ -32,19 +32,25 @@
                <div class="input">
                   <label for="subject">Subject:</label><br>
                   <input type="text" id="subject">
-                </div>
-                <div class="input">
+               </div>
+               <div class="input">
                   <label for="message">Message:</label><br>
                   <textarea name="message" id="message"></textarea>
-                </div>
-                <div class="buttons">
-                  <button type="button" class="send">
-                     <i class="fas fa-paper-plane"></i> SEND
-                  </button>
-                  <button type="button" class="reset">
-                     <i class="fas fa-redo-alt"></i> RESET
-                  </button>
-                </div>
+               </div>
+               <div class="spiner">
+                  <i class="fas fa-spinner fa-spin"></i>                     
+               </div>
+               <div class="sent">
+                  <i class="far fa-check-circle"></i>
+               </div>
+               <div class="buttons">
+                 <button type="sumbit" class="send" id="send">
+                    <i class="fas fa-paper-plane"></i> SEND
+                 </button>
+                 <button type="button" class="reset" id="reset">
+                    <i class="fas fa-redo-alt"></i> RESET
+                 </button>
+               </div>
             </form>
          </div>
       </div>

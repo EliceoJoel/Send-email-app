@@ -143,6 +143,21 @@ textarea:focus{
   border-bottom:1px solid #f25fd0;
 }
 
+/*IMGS*/
+.spiner{
+  display: none;
+  text-align: center;
+  font-size: 50px;
+  color: #5ff2f0;
+}
+
+.sent{
+  display: none;
+  text-align: center;
+  font-size: 50px;
+  color: #5ff281;
+}
+
 
 /*BUTTONS*/
 
@@ -162,10 +177,10 @@ button{
 }
 
 .send{
-  background:rgb(6, 128, 6);
+  background:green;
 }
 
-.send:hover,focus{
+.send:hover{
   background: rgb(8, 192, 8)
 }
 
